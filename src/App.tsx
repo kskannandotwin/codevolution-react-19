@@ -1,9 +1,10 @@
 import "./App.css";
+import { Greet } from "./components/Greet";
 
 function App() {
   return (
     <>
-      <h2>Hello World</h2>
+      <Greet name="Kannan" messageCount={10} />
     </>
   );
 }
