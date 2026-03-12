@@ -1,24 +1,17 @@
 import "./App.css";
 import { Greet } from "./components/Greet";
-import { Person } from "./components/Person";
-import { PersonList } from "./components/PersonList";
+import { Heading } from "./components/Heading";
+import { Oscar } from "./components/Oscar";
 
 function App() {
-  const personName = {
-    first: "Bruce",
-    last: "Wayne",
-  };
-
-  const nameList = [
-    { first: "Bruce", last: "Wayne" },
-    { first: "Clark", last: "Kent" },
-    { first: "Diana", last: "Prince" },
-  ];
   return (
     <>
-      <Greet name="Kannan" messageCount={10} isLoggedIn={false} />
-      <Person name={personName} />
-      <PersonList names={nameList} />
+      <Heading>React Framework</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Leonardo DiCaprio</Heading>
+        <Heading>Oscar goes to Rehman</Heading>
+      </Oscar>
+      <Greet name="Kannan" isLoggedIn={false} />
     </>
   );
 }
