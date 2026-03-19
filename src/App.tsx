@@ -1,15 +1,11 @@
 import "./App.css";
-import { ChatGptCounter } from "./components/state/ChatGptCounter";
-import { ChatGptInput } from "./components/state/ChatGptInput";
-import { ChatGptToggle } from "./components/state/ChatGptToggle";
+import { Counter } from "./components/state/Counter";
 
 function App() {
   return (
     <>
       <div>
-        <ChatGptCounter />
-        <ChatGptInput />
-        <ChatGptToggle />
+        <Counter />
       </div>
     </>
   );
