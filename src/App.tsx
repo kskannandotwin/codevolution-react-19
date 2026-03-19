@@ -1,11 +1,15 @@
 import "./App.css";
-import { LoggedIn } from "./components/state/LoggedIn";
+import { ChatGptCounter } from "./components/state/ChatGptCounter";
+import { ChatGptInput } from "./components/state/ChatGptInput";
+import { ChatGptToggle } from "./components/state/ChatGptToggle";
 
 function App() {
   return (
     <>
       <div>
-        <LoggedIn />
+        <ChatGptCounter />
+        <ChatGptInput />
+        <ChatGptToggle />
       </div>
     </>
   );
