@@ -1,11 +1,14 @@
 import "./App.css";
-import { ChatGptReducerCounter } from "./components/state/ChatGptReducerCounter";
+import { Box } from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeProvider";
 
 function App() {
   return (
     <>
       <div>
-        <ChatGptReducerCounter />
+        <ThemeContextProvider>
+          <Box />
+        </ThemeContextProvider>
       </div>
     </>
   );
