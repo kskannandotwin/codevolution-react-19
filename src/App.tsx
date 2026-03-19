@@ -1,11 +1,11 @@
 import "./App.css";
-import { Counter } from "./components/state/Counter";
+import { ChatGptReducerCounter } from "./components/state/ChatGptReducerCounter";
 
 function App() {
   return (
     <>
       <div>
-        <Counter />
+        <ChatGptReducerCounter />
       </div>
     </>
   );
