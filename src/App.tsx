@@ -1,14 +1,11 @@
 import "./App.css";
-import { User } from "./components/context/User";
-import { UserContextProvider } from "./components/context/UserContext";
+import { ThemeContextProvider } from "./components/chatgpt-context/ThemeProvider";
 
 function App() {
   return (
     <>
       <div>
-        <UserContextProvider>
-          <User />
-        </UserContextProvider>
+        <ThemeContextProvider />
       </div>
     </>
   );
